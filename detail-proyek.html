@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Proyek | QuizzaE - Aplikasi Kuis Interaktif</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOMBOL KEMBALI UNTUK MOBILE -->
+    <a href="index.html#projects" class="btn-back-mobile" aria-label="Kembali ke Proyek">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+    </a>
+
+    <!-- Kursor Kustom -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- HEADER KONSISTEN -->
+    <header>
+        <nav>
+            <a href="index.html" class="nav-logo">HayKalll.</a>
+            <ul class="nav-links">
+                <li><a href="index.html#projects">&larr; Kembali ke Proyek</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECTION DETAIL PROYEK -->
+        <section class="project-detail-revamped">
+
+            <!-- 1. HEADER PROYEK -->
+            <div class="detail-header" data-aos="fade-up">
+                <h1>QuizzaE - Aplikasi Kuis Interaktif</h1>
+                <p class="project-subtitle">Platform kuis full-stack yang dirancang dengan dua peran utama: admin untuk manajemen konten dan pengguna untuk pengalaman belajar yang menyenangkan.</p>
+                <div class="detail-meta">
+                    <div><strong>Peran:</strong> Full-Stack Developer</div>
+                    <div><strong>Tipe:</strong> Proyek Pribadi</div>
+                    <div><strong>Tahun:</strong> 2025</div>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn" target="_blank">Lihat Kode &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 2. GALERI GAMBAR -->
+            <div class="detail-gallery" data-aos="fade-up" data-aos-delay="200">
+                <img src="login.jpg" alt="Halaman Login dan Registrasi QuizzaE">
+                <img src="user_dashboard.jpg" alt="Dashboard Pengguna QuizzaE">
+                <img src="halaman_quiz.jpg" alt="Tampilan Pengerjaan Kuis">
+                <img src="result1.jpg" alt="Halaman Hasil Kuis dengan Skor Bagus">
+                <img src="admin_dashboard.jpg" alt="Dashboard Admin QuizzaE">
+                <img src="tambah_soal.jpg" alt="Manajemen Soal oleh Admin">
+            </div>
+
+            <!-- 3. KONTEN DUA KOLOM -->
+            <div class="detail-body" data-aos="fade-up">
+                <div class="detail-description">
+                    <h2>Tentang Proyek</h2>
+                    <p>QuizzaE adalah sebuah aplikasi web yang saya bangun dari awal menggunakan Laravel. Tujuan utama proyek ini adalah untuk menciptakan sebuah platform kuis yang tidak hanya fungsional, tetapi juga memiliki antarmuka yang bersih dan pengalaman pengguna yang intuitif baik untuk admin maupun peserta kuis (pengguna).</p>
+                    <p>Aplikasi ini memiliki sistem autentikasi dan otorisasi berbasis peran, di mana <strong>Admin</strong> memiliki kontrol penuh atas konten, termasuk membuat kuis, menambah/mengedit soal beserta gambar, dan memantau aktivitas pengguna. Sementara itu, <strong>Pengguna</strong> dapat mendaftar, memilih kuis yang tersedia, mengerjakannya dengan batasan waktu, dan melihat riwayat serta peringkat mereka.</p>
+                    <h2>Tantangan & Solusi</h2>
+                    <p>Salah satu tantangan menarik adalah merancang alur pengerjaan kuis yang adil dan aman. Untuk mengatasi ini, timer pengerjaan kuis divalidasi di sisi server (backend) untuk mencegah manipulasi dari sisi klien. Selain itu, saya merancang halaman hasil yang dinamis, menampilkan pesan dan gambar yang berbeda tergantung pada skor yang dicapai pengguna, memberikan sentuhan personalisasi yang menyenangkan.</p>
+                </div>
+                <div class="detail-sidebar">
+                    <div class="sidebar-box">
+                        <h3>Teknologi yang Digunakan</h3>
+                        <ul class="tech-list">
+                            <li>Laravel (PHP Framework)</li>
+                            <li>MySQL</li>
+                            <li>Blade Templating Engine</li>
+                            <li>JavaScript (untuk timer & interaktivitas)</li>
+                            <li>HTML5 & Custom CSS</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-box">
+                        <h3>Fitur Utama</h3>
+                        <ul class="feature-list">
+                            <li><strong>Fitur Admin:</strong></li>
+                            <li>- Dashboard Statistik</li>
+                            <li>- Manajemen Kuis (CRUD)</li>
+                            <li>- Manajemen Soal dengan Gambar (CRUD)</li>
+                            <li><strong>Fitur Pengguna:</strong></li>
+                            <li>- Sistem Login & Registrasi</li>
+                            <li>- Pengerjaan Kuis dengan Timer</li>
+                            <li>- Halaman Hasil Kuis Dinamis</li>
+                            <li>- Riwayat Pengerjaan & Papan Peringkat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- FOOTER KONSISTEN -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 | Dibuat oleh Muhammad Fikri Haykal | KallZaE</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT AOS & LOKAL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

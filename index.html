@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fikri Haykal | Web Developer</title>
+
+    <!-- Menghubungkan ke Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Menghubungkan ke Library CSS Eksternal -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Menghubungkan ke file CSS Lokal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Kursor Kustom -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- NAVIGASI / HEADER -->
+    <header>
+        <nav>
+            <a href="#" class="nav-logo">HayKalll.</a>
+            
+            <!-- TOMBOL HAMBURGER -->
+            <button class="hamburger-menu" aria-label="Buka Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+    
+            <ul class="nav-links">
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BAGIAN 1: HERO SECTION -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 data-aos="fade-up">Halo, saya <span id="typing-animation"></span></h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Seorang pengembang web yang bersemangat dalam menciptakan solusi digital yang elegan dan fungsional.</p>
+                    <a href="#projects" class="btn" data-aos="fade-up" data-aos-delay="400">Lihat Proyek Saya</a>
+                </div>
+                <div class="hero-lanyard-container" data-aos="fade-left" data-aos-delay="500">
+                    <div class="lanyard">
+                        <div class="lanyard-strap"></div>
+                        <div class="lanyard-card" id="lanyardCard">
+                            <div class="card-face card-front">
+                                 <svg class="logo-atom" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.5 4.5l-5 15M4.5 9.5h15M4.5 14.5h15M12 2.5v19"></path><ellipse cx="12" cy="12" rx="9" ry="4.5" transform="rotate(45 12 12)"></ellipse><ellipse cx="12" cy="12" rx="9" ry="4.5" transform="rotate(-45 12 12)"></ellipse></svg>
+                            </div>
+                            <div class="card-face card-back">
+                                <img src="profil.png" alt="Foto Fikri Haykal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN 2: TENTANG SAYA -->
+        <section id="about" class="about">
+            <div class="about-container" data-aos="fade-up">
+                <div class="about-image">
+                    <img src="profil.png" alt="Foto Profil Muhammad Fikri Haykal">
+                </div>
+                <div class="about-content">
+                    <h2>Tentang Saya</h2>
+                    <p>Saya adalah seorang mahasiswa Teknik Informatika dengan hasrat mendalam untuk pengembangan web dan mobile. Saya senang mengubah ide-ide menjadi aplikasi yang nyata dan fungsional. Saat ini, saya fokus memperdalam keahlian dalam teknologi backend seperti Laravel sambil terus mengasah kemampuan frontend dan mobile development menggunakan Flutter.</p>
+                    <h3>Teknologi yang Saya Kuasai</h3>
+                    <div class="skills-list">
+                        <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>PHP</span> <span>Laravel</span> <span>MySQL</span> <span>Flutter</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN 3: PROYEK -->
+        <section id="projects" class="projects">
+            <h2 data-aos="fade-up">Proyek Unggulan</h2>
+            <div class="projects-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card">
+                    <div class="project-image"><img src="quizzae.png" alt="Proyek Web Kuis"></div>
+                    <div class="project-content">
+                        <h3>QuizzaE - Aplikasi Kuis</h3>
+                        <p>Sebuah platform kuis full-stack yang dibangun dengan Laravel, lengkap dengan manajemen admin dan antarmuka pengguna interaktif.</p>
+                        <div class="project-tech"><span>Laravel</span><span>MySQL</span><span>JavaScript</span></div>
+                        <div class="project-links"><a href="detail-proyek.html" class="btn-link">Lihat Detail &rarr;</a></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"><img src="properti_indah.png" alt="Proyek Properti_ku"></div>
+                    <div class="project-content">
+                        <h3>Properti_ku Landing Page</h3>
+                        <p>Website statis untuk tugas kuliah yang menampilkan halaman properti. Dibangun untuk melatih fundamental HTML, CSS, dan JavaScript.</p>
+                        <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <div class="project-links"><a href="https://github.com/KallTzy001/Properti_ku" target="_blank" class="btn-link">Lihat Kode &rarr;</a><a href="https://kalltzy001.github.io/Properti_ku/" target="_blank" class="btn-link">Live Demo &rarr;</a></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"><img src="sidarling.png" alt="Proyek Sidarling"></div>
+                    <div class="project-content">
+                        <h3>Sidarling (Konsep)</h3>
+                        <p>Konsep aplikasi mobile panggilan darurat yang dibangun menggunakan Flutter. Proyek ini bertujuan untuk mengeksplorasi pengembangan mobile.</p>
+                        <div class="project-tech"><span>Flutter</span><span>Dart</span></div>
+                        <div class="project-links"><a href="#" class="btn-link">Pelajari Konsep &rarr;</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN 4: KONTAK -->
+        <section id="contact" class="contact">
+            <p class="contact-subtitle" data-aos="fade-up">Punya pertanyaan atau ide?</p>
+            <h2 data-aos="fade-up" data-aos-delay="100">Mari Berkolaborasi</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Saya selalu terbuka untuk diskusi mengenai proyek baru atau peluang menarik. Jangan ragu untuk menghubungi saya.</p>
+            <div class="social-links" data-aos="fade-up" data-aos-delay="300">
+                <a href="mailto:cuahkidul222@gmail.com" class="social-card" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/KallTzy001" class="social-card" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <a href="#" class="back-to-top" aria-label="Kembali ke atas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+            </a>
+            <p>&copy; 2025 | Dibuat oleh Muhammad Fikri Haykal | KallZaE</p>
+        </div>
+    </footer>
+
+    <!-- Menghubungkan ke Library JS Eksternal & Lokal -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
